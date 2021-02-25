@@ -40,7 +40,7 @@
     <failsafe.include>**/*IT.java</failsafe.include>
     <failsafe.exclude>**/Native*IT.java</failsafe.exclude>
     <alphanetworkCompilerEnabled>false</alphanetworkCompilerEnabled>
-    <tests.category></tests.category>
+    <tests.category/>
     <!-- Port 0 means dynamic port -->
     <tests.quarkus.http.port>0</tests.quarkus.http.port> 
 
@@ -74,7 +74,7 @@
     <!-- cloudevents -->
     <version.cloudevents.api>2.0.0-milestone3</version.cloudevents.api>
     <!-- pmml -->
-    <version.org.jpmml>1.5.1</version.org.jpmml>
+    <version.org.jpmml>1.5.11</version.org.jpmml>
     <version.wiremock>2.27.2</version.wiremock>
 
   </properties>
@@ -243,7 +243,7 @@
       <id>native</id>
       <properties>
         <failsafe.include>**/Native*IT.java</failsafe.include>
-        <failsafe.exclude></failsafe.exclude>
+        <failsafe.exclude/>
         <quarkus.package.type>native</quarkus.package.type>
         <!-- Native building needs a fixed port for tests -->
         <tests.quarkus.http.port>8080</tests.quarkus.http.port>
