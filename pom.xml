@@ -40,7 +40,7 @@
     <failsafe.include>**/*IT.java</failsafe.include>
     <failsafe.exclude>**/Native*IT.java</failsafe.exclude>
     <alphanetworkCompilerEnabled>false</alphanetworkCompilerEnabled>
-    <tests.category></tests.category>
+    <tests.category/>
     <!-- Port 0 means dynamic port -->
     <tests.quarkus.http.port>0</tests.quarkus.http.port> 
 
@@ -63,7 +63,7 @@
     <!-- testcontainers -->
     <version.testcontainers>1.15.0</version.testcontainers>
     <!-- jsonpath-->
-    <version.jayway.jsonpath>2.4.0</version.jayway.jsonpath>
+    <version.jayway.jsonpath>2.6.0</version.jayway.jsonpath>
     <version.swagger.plugin>2.1.0</version.swagger.plugin>
     <version.io.swagger.core.v3>2.0.6</version.io.swagger.core.v3>
     <version.surefire.plugin>2.22.2</version.surefire.plugin>
@@ -243,7 +243,7 @@
       <id>native</id>
       <properties>
         <failsafe.include>**/Native*IT.java</failsafe.include>
-        <failsafe.exclude></failsafe.exclude>
+        <failsafe.exclude/>
         <quarkus.package.type>native</quarkus.package.type>
         <!-- Native building needs a fixed port for tests -->
         <tests.quarkus.http.port>8080</tests.quarkus.http.port>
